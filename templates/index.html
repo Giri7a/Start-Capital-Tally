@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+
+	<title>Start Capital Tally</title>
+
+    <!-- box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css-->
+	<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- header design-->
+    <header class="header">
+        <a href="#" class="logo">Start Capital Tally</a>
+        
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#Service">Service</a>
+            <a href="#About">About</a>
+        </nav>
+    </header>
+
+    <!-- home section design-->
+    <section class="Home" id="Home">
+        <div class="Home-content">
+            <h3>A Response application, used to tally the capital that is required for the implementation of the Business idea into a startup in that <span>Particular Field of interest.</span></h3>
+        </div>
+        <div class="Home-img">
+            <!-- <img src="logo.png" alt=""> -->
+            <img src="{{url_for('static', filename='logo.png')}}" />
+        </div>
+    </section>
+
+    <!--about section design-->
+    <section class="About" id="About">
+        <div class="About-img">
+            <img src="{{url_for('static', filename='about _.png')}}" />
+        </div>
+
+        <div class="About-content">
+            <h2 class="heading">About<span>Us</span></h2>
+            <h3>Our application is specifically designed to assist individuals in accurately predicting the capital required to build a successful startup. By utilizing our platform, you can differentiate yourself from others and establish yourself as a unique and innovative entrepreneur. Whether you're an experienced entrepreneur or just starting out, our application is here to help you on your journey towards success.</h2>
+        </div>
+
+    </section><!--about section design end-->
+
+    <!--Service section design-->
+    <section class="Service" id="Service">
+        <h2 class="heading">Our<span>Service</span></h2>
+        <div class="Service-container">
+            <div class="Service-box">
+                <img src="{{url_for('static', filename='education.png')}}" />
+                <div class="Service-layer">
+                 <h4>EDUCATION</h4>
+                 <p id="info">Tally your Capital Needed to Setup an Educational Franchise</p>
+                 <a href="/education"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="Service-box">
+                <img src="{{url_for('static', filename='food.png')}}" />
+                <div class="Service-layer">
+                 <h4>FOOD</h4>
+                 <p id="info">Tally your Capital Needed to Setup a Food Franchise</p>
+                 <a href="/food"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="Service-box">
+                <img src="{{url_for('static', filename='business.png')}}" />
+                <div class="Service-layer">
+                 <h4>BUSINESS</h4>
+                 <p id="info">Tally your Capital Needed to Setup a Business Franchise</p>
+                 <a href="/business"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div><!--Service-container end-->
+
+    </section><!--Sectionn end-->
+
+    <!-- footer desing-->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p> Copyrights &copy; 2023 by Ch G.N.D Prasad, K. Atchuth Rao & P. Rakesh</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#Home"><i class='bx bx-up-arrow-alt'></i></a>
+
+        </div>
+
+    </footer>
+    <!-- scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script class="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <!-- custom js-->
+   <script src="static/script.js"></script>
+</body>
+</html>

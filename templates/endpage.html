@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="x-icon" href="{{url_for('static', filename='logo.png')}}">
+
+    <title>Start Capital Tally | Result page</title>
+    <!-- custom css-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style2.css">
+</head>
+<body>
+
+    <!-- <div class="cup">
+    <div class="h"></div>
+    </div> -->
+    <!-- header design-->
+    <header class="header">
+        <a href="/" class="logo">Start Capital Tally</a>
+        
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/">Service</a>
+            <a href="/">About</a>
+        </nav>
+    </header>
+
+<section class="endpage" >
+    <center>
+        <br>
+        <br>
+        <br>
+        <div class="rdiv">
+            <img src="{{url_for('static', filename='logo.png')}}">
+            <h2 class="heading"><span>Estimated Price to Your Capital</span></h2>
+            <br><br><br><br><br>
+            <div class="rdiv2">
+                <h2 class="price"> Price ₹₹{{ prediction_text }} </h2>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h1 class="and"> & </h1>
+        <br>
+        <div class="rdiv">
+            <br>
+        <h1 class="heading">Suggestions</h1>
+        <br>
+        <br>
+            {% for i in out[Location] %}
+            <h1><span style="font-size: 20px;">{{ i }}</span></h1>
+            <br>
+            {% endfor %}
+        </div>
+   </section>
+     <!-- footer desing-->
+     <footer class="footer">
+        <div class="footer-text">
+            <p> Copyrights &copy; 2023 by Ch G.N.D Prasad, K. Atchuth Rao & P. Rakesh</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+        </div>
+
+    </footer>
+</body>
+</html>

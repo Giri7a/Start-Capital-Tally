@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guntur-food | Requirements-form</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style1.css">
+	<link rel="icon" type="image/png" href="{{url_for('static', filename='gun.png')}}">
+</head>
+ <!-- header design-->
+ <header class="header">
+	<a href="#" class="logo">Start Capital Tally</a>
+	<i class='bx bx-menu' id="menu-icon"></i>
+
+	<nav class="navbar">
+		<a href="/">Home</a>
+		<a href="/">Service</a>
+		<a href="/">About</a>
+	</nav>
+</header>
+<section>
+<body class="body">
+	<center>
+		<h2>Choose your Preferences</h2>
+		<div class="divvij">
+			<form action="{{ url_for('predict')}}" method="POST" class="form">
+				<h3>Location</h3>
+				<label>
+					<input type="radio" name="Location" value="0">
+						Guntur
+					</label>
+					<br>
+				<h3>Building Size</h3>
+				<label>
+				Small<small class="measure">(11-1300sqft)</small><input type="radio" name="bsize" value="0" >&ensp;&ensp;
+				Medium<small class="measure">(1301-3000sqft)</small><input type="radio" name="bsize" value="1">&ensp;&ensp;
+				Large<small class="measure">(3000sft+)</small><input type="radio" name="bsize" value="2">
+				</label>
+				<br>
+				<label>
+				<h3>Ambience</h3>
+				Basic<input type="radio" name="amb" value="31250">&ensp;&ensp;
+				Intermediate<input type="radio" name="amb" value="60430">&ensp;&ensp;
+				Advance<input type="radio" name="amb" value="1000990">
+				</label>
+				<br>
+				<label>
+				<h3>Menu</h3>
+				Basic<small class="measure">(Veg&NVeg)</small><input type="radio" name="menu" value="285320">&ensp;&ensp;
+				Intermediate<small class="measure">(Multicuisine)</small><input type="radio" name="menu" value="1200999">&ensp;&ensp;
+				Advance<small class="measure">(All Types)</small><input type="radio" name="menu" value="2300890">
+				</label>
+				<br>
+				<h3>Chef</h3>
+				<label>
+				Basic<small class="measure">(1c & 2h)</small><input type="radio" name="chef" value="18750">&ensp;&ensp;
+				Intermediate<small class="measure">(2c & 2h)</small><input type="radio" name="chef" value="90540">&ensp;&ensp;
+				Advance<small class="measure">(2c+ & 3h)</small><input type="radio" name="chef" value="1500430">
+				</label>
+				<br>
+				<h3>Kitchen Size</h3>
+				<label>
+				Basic<input type="radio" name="ksize" value="100998">&ensp;&ensp;
+				Intermediate<input type="radio" name="ksize" value="150390">&ensp;&ensp;
+				Advance<input type="radio" name="ksize" value="300550">
+				</label>
+				<br>
+				<label>
+				<h3>Marketing</h3>
+				Basic<input type="radio" name="mark" value="11499">&ensp;&ensp;
+			    Intermediate<input type="radio" name="mark" value="45999">&ensp;&ensp;
+				Advance<input type="radio" name="mark" value="140099">&ensp;&ensp;
+				</label>
+				<br>
+				<label>
+				<h3>Staff Level</h3>
+				Basic<input type="radio" name="sl" value="13050">&ensp;&ensp;
+				Intermediate<input type="radio" name="sl" value="40599">&ensp;&ensp;
+				Professional<input type="radio" name="sl" value="230150">
+				</label>
+				<br>
+				<label>
+				<h3>Security</h3>
+				Yes<input type="radio" name="sec" value="1">&ensp;&ensp;
+			    No<input type="radio" name="sec" value="0">&ensp;&ensp;
+				</label>
+				<br>
+				<label>
+				<h3>Government Permission</h3>
+				Yes<input type="radio" name="gp" value="1">&ensp;&ensp;
+			    No<input type="radio" name="gp" value="0">&ensp;&ensp;
+				</label>
+				<br>
+				<br>
+				<input type="submit" class="submit" value="submit" />
+			<br>
+			<br>
+			</form>
+			
+		</div>
+		<br>
+	</center>
+	</section>
+  <!-- footer desing-->
+  <footer class="footer">
+	<div class="footer-text">
+		<p> Copyrights &copy; 2023 by Ch G.N.D Prasad, K. Atchuth Rao & P. Rakesh</p>
+	</div>
+	<div class="footer-iconTop">
+		<a href="#Home"><i class='bx bx-up-arrow-alt'></i></a>
+
+	</div>
+
+</footer>
+</body>
+</html>
